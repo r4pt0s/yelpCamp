@@ -15,7 +15,7 @@ const Campground= require('./models/campground');
 const app= express();
 const PORT = process.env.PORT ? process.env.PORT : 3000;
 const MONGODBPORT= process.env.MONGODBPORT || 27017;
-const mongoDbUrl= process.env.MONGODBCONNECTOR;
+const mongoDbUrl= process.env.MONGODBCONNECTOR || `mongodb://localhost:${MONGODBPORT}/YelpCamp_V12`;
 
 
 //require ROUTES
