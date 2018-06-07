@@ -15,6 +15,24 @@
 				</li>
 			</ul>
 		<ul class="navbar-nav navbar-right">
+				<li class="nav-item">
+					<form class="form-inline" action="/campgrounds" method="GET">
+						<div class="form-group">
+							<div class="input-group mr-3">
+								<input type="text" 
+									   class="form-control" 
+									   placeholder="Search Campgrounds..." 
+									   aria-label="Recipient's username" 
+									   aria-describedby="basic-addon2">
+								<div class="input-group-append">
+									<button class="input-group-text curHand" id="basic-addon2">
+										<i class="fas fa-search"></i>Search
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</li>
 				<% if(!currentUser) { %>
 							<li class="nav-item">
 									<a class="nav-link" href="/register"><i class="fas fa-user"></i> Sign up</a>

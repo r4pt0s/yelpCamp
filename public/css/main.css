@@ -37,6 +37,11 @@ a.btn{
 	background-color: black;
 }
 
+.curHand
+{
+	cursor: pointer;
+}
+
 footer{
 	margin-top:3em;
 	background-color: #007bff6c; 
