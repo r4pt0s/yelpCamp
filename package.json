@@ -4,7 +4,7 @@
   "description": "Example project to show knowledge of: HTML5, CSS3, Javascript, NodeJs ",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon start app.js"
+    "start": "node app.js"
   },
   "keywords": [
     "nodejs",
