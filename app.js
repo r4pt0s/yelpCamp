@@ -63,5 +63,5 @@ app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentsRoutes);
 
 app.listen(PORT, () => {
-	console.log(`YelpCamp Server is listening @${PORT} on ${IP}`);
+	console.log(`YelpCamp Server is listening`);
 })
