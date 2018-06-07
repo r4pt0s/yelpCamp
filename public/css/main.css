@@ -1,0 +1,50 @@
+.campImgFull{
+	width:100%;
+}
+
+.img-thumbnail{
+	padding:0;
+}
+
+
+p{
+	padding:10px;
+}
+
+a.btn{
+	padding:7px;
+}
+
+.blockToInline{
+	display:inline;
+}
+
+/* Google Maps */
+#map {
+    height: 400px;
+	width: 100%;
+	background-color: gray;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+.thumbnail_fix_size{
+	display:flex; 
+	flex-direction: column; 
+	justify-content: center; 
+	width: auto; 
+	height: 15em; 
+	background-color: black;
+}
+
+footer{
+	margin-top:3em;
+	background-color: #007bff6c; 
+	color:black; 
+}
+
+.footer-container{
+	display: flex; 
+	flex-direction: row;
+	justify-content: center; 
+}

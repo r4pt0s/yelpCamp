@@ -1,0 +1,22 @@
+<% include ../partials/header %>
+
+	<div class="row mb-5">
+		<div class="col-12 offset-md-1">
+			<div class="card w-75" style="width: 18rem;">
+				<img class="card-img-top" src="<%= campground.image %>" width="350px" height="auto" />
+				<div class="card-body">
+					<h5 class="card-title"><%= campground.name %></h5>
+					<p class="card-text"><%=campground.description %></p>
+					<a href="/campgrounds" class="btn btn-primary">Go Back</a>
+				</div>
+				<div class="comments">
+					<% campground.comments.forEach( comment => { %>
+						<p><%= comment.author %></p>
+						<p><%= comment.text %></p>
+					<% }) %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<% include ../partials/footer %>

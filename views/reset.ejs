@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+
+<div class="row">
+    <h1 class="mx-auto mb-3">Password reset</h1>
+</div>
+<div class="row">
+    <div class=" col-md-12 mx-auto">
+        <form action="/reset/<%= token %>" method="post">
+            <div class="form-group">
+                <label for="newPassword">New Password</label>
+                <input class="form-control" type="password" name="newPassword" placeholder="enter new password" autofocus>
+            </div>
+            <div class="form-group">
+                    <label for="confirmPassword">New Password</label>
+                    <input class="form-control" type="password" name="confirmPassword" placeholder="Confirm Password" autofocus>
+                </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Reset password</button>
+            </div>
+        </form>
+        <a href="/login">Go Back</a>
+    </div>
+</div>
+<% include ./partials/footer %>
